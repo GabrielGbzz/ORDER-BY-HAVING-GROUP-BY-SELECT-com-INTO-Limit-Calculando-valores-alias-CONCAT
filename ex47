@@ -1,0 +1,4 @@
+SELECT TOP 10
+       CONCAT(SupplierName, ' - ', ContactName) AS ContactoFornecedor
+INTO ContactosFornecedores
+FROM Suppliers;
