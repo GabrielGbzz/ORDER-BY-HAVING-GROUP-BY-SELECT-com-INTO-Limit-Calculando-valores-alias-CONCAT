@@ -1,0 +1,9 @@
+SELECT CategoryID, COUNT() AS TotalProdutos
+FROM Products
+GROUP BY CategoryID
+HAVING COUNT() IN (
+    SELECT COUNT()
+    FROM Products
+    GROUP BY CategoryID
+    HAVING COUNT() > 1
+);
