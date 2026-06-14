@@ -1,0 +1,5 @@
+SELECT EmployeeID,
+       COUNT() AS TotalEncomendas
+FROM Orders
+GROUP BY EmployeeID
+HAVING COUNT() * 2 > 50;
