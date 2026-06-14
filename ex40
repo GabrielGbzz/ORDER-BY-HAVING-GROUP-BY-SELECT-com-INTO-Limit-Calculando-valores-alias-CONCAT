@@ -1,0 +1,5 @@
+SELECT *
+INTO ProdutosInativos
+FROM Products
+WHERE Price = 0
+   OR Price IS NULL;
