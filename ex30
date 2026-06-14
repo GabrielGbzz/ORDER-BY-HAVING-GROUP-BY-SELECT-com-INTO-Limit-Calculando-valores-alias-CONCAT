@@ -1,0 +1,6 @@
+SELECT s.Country, COUNT() AS TotalTransportadoras
+FROM Suppliers s
+INNER JOIN Shippers sh
+    ON s.SupplierID = sh.ShipperID
+GROUP BY s.Country
+HAVING COUNT() > 1;
