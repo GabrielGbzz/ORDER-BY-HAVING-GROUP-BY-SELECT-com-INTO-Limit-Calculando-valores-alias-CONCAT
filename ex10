@@ -1,0 +1,4 @@
+SELECT CustomerName,
+CONCAT(Address,'-',City,'-',PostalCode) AS MoradaCompleta
+FROM Customers
+LIMIT 25;
