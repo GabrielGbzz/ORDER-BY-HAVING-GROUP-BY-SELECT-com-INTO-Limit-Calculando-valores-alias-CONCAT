@@ -1,0 +1,6 @@
+SELECT
+    CategoryID,
+    COUNT(*) AS TotalProdutos
+FROM Products
+GROUP BY CategoryID
+HAVING COUNT(*) > 12;
