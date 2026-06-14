@@ -1,0 +1,7 @@
+SELECT TOP 2
+       ShipperID,
+       COUNT() AS TotalEncomendas
+INTO ResumoTransportes
+FROM Orders
+GROUP BY ShipperID
+ORDER BY COUNT() DESC;
