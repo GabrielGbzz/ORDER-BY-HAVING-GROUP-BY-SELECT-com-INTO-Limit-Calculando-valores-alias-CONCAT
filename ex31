@@ -1,0 +1,3 @@
+SELECT TOP 10 *
+INTO TopClientes_Senai
+FROM Customers;
