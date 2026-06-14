@@ -1,0 +1,5 @@
+SELECT OrderID,
+COUNT(DISTINCT ProductID) AS TotalProdutos
+FROM OrderDetails
+GROUP BY OrderID
+LIMIT 15;
