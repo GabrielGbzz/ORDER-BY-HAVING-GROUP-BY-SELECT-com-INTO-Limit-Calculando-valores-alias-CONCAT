@@ -1,3 +1,4 @@
-SELECT CustomerName, ContactName
-INTO MailingList
-FROM Customers;
+SELECT *
+INTO DetalhesGrandes
+FROM OrderDetails
+WHERE Quantity > 50;
