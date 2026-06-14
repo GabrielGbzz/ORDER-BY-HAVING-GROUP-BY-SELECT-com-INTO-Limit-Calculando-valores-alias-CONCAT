@@ -1,0 +1,6 @@
+SELECT
+    EmployeeID,
+    COUNT(*) AS TotalEncomendas
+FROM Orders
+GROUP BY EmployeeID
+HAVING COUNT(*) > 10;
