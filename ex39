@@ -1,0 +1,3 @@
+SELECT CustomerName, ContactName
+INTO MailingList
+FROM Customers;
