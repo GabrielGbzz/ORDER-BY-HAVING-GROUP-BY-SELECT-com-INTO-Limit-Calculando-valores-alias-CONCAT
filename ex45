@@ -1,0 +1,6 @@
+SELECT CONCAT(
+       'Produto: ', ProductName,
+       ' IVA: ', ROUND(Price * 0.23, 2)
+       ) AS InformacaoProduto
+FROM Products
+LIMIT 15;
