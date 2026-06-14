@@ -1,0 +1,5 @@
+SELECT ProductID,
+       AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+GROUP BY ProductID
+HAVING AVG(Quantity) > 20;
