@@ -1,0 +1,5 @@
+SELECT YEAR(BirthDate) AS AnoNascimento,
+       COUNT() AS TotalFuncionarios
+FROM Employees
+GROUP BY YEAR(BirthDate)
+HAVING COUNT() > 1;
