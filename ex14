@@ -1,0 +1,5 @@
+SELECT Country,
+COUNT(*) AS ToTalFornecedores
+FROM Suppliers
+GROUP BY Country
+LIMIT 10;
