@@ -1,0 +1,4 @@
+SELECT *
+INTO FornecedoresNacionais
+FROM Suppliers
+WHERE City = 'Lisboa';
