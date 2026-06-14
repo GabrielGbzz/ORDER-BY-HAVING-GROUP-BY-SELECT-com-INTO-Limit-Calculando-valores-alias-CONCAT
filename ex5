@@ -1,0 +1,5 @@
+SELECT ProductName,
+CONCAT('Preço:',' ',Price*0.85,'euros') AS Desconto
+FROM Products
+ORDER BY Price DESC
+LIMIT 8;
