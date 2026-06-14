@@ -1,0 +1,3 @@
+SELECT
+    COUNT(DISTINCT CategoryID) AS TotalCategorias
+FROM Products;
