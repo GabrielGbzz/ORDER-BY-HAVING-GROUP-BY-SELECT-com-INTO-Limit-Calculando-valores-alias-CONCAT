@@ -1,0 +1,5 @@
+SELECT
+    OrderDetailID,
+    CONCAT('Faltam ', 100 - Quantity, ' unidades para o stock ideal') AS Situacao
+FROM OrderDetails
+LIMIT 20;
