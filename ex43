@@ -1,0 +1,6 @@
+SELECT TOP 5
+       CONCAT(FirstName, ' ', LastName) AS NomeCompleto,
+       BirthDate
+INTO VeteranosSenai
+FROM Employees
+ORDER BY BirthDate;
