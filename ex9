@@ -1,0 +1,4 @@
+SELECT
+    CONCAT(SupplierName, ' - Custo para 50 unidades: ', Price * 50, ' euros') AS Resultado
+FROM Suppliers
+LIMIT 10;
