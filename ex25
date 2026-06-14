@@ -1,0 +1,6 @@
+SELECT
+    OrderID,
+    COUNT(DISTINCT ProductID) AS TotalProdutosDiferentes
+FROM OrderDetails
+GROUP BY OrderID
+HAVING COUNT(DISTINCT ProductID) > 3;
