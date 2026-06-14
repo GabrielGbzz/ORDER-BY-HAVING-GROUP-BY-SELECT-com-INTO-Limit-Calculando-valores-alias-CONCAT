@@ -1,0 +1,6 @@
+SELECT EmployeeID,
+COUNT(*) TotalEncomendas
+FROM Orders
+GROUP BY EmployeeID
+ORDER BY TotalEncomendas DESC
+LIMIT 5;
