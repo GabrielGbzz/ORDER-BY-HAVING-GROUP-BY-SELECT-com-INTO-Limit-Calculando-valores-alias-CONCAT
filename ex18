@@ -1,0 +1,6 @@
+    OrderDate,
+    COUNT(*) AS TotalEncomendas
+FROM Orders
+GROUP BY OrderDate
+ORDER BY TotalEncomendas DESC
+LIMIT 10;
