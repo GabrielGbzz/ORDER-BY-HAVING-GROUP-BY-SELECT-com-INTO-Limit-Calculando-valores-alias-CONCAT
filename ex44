@@ -1,0 +1,7 @@
+SELECT TOP 5
+       City,
+       COUNT() AS TotalClientes
+INTO CidadesEstrategicas
+FROM Customers
+GROUP BY City
+HAVING COUNT() > 2;
