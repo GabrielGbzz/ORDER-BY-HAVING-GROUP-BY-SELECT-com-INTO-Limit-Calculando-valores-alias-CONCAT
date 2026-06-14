@@ -1,0 +1,4 @@
+SELECT *
+INTO ProdutosCaros
+FROM Products
+WHERE Price > 50;
