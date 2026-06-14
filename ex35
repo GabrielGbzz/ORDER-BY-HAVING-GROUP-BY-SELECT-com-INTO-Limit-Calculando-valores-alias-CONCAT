@@ -1,0 +1,4 @@
+SELECT TOP 20 *
+INTO EncomendasRecentes
+FROM Orders
+ORDER BY OrderDate DESC;
