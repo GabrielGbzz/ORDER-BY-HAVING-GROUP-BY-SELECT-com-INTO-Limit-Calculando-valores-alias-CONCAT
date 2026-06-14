@@ -1,0 +1,4 @@
+SELECT SupplierID, COUNT() AS TotalProdutos
+FROM Products
+GROUP BY SupplierID
+HAVING COUNT() < 5;
