@@ -1,0 +1,5 @@
+SELECT
+CONCAT(CustomerName,'-',City) AS ClienteCidade
+FROM Customers
+ORDER BY CustomerName ASC
+LIMIT 12;
