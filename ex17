@@ -1,0 +1,6 @@
+SELECT
+    SupplierID,
+    COUNT(*) AS TotalProdutos
+FROM Products
+GROUP BY SupplierID
+LIMIT 5;
