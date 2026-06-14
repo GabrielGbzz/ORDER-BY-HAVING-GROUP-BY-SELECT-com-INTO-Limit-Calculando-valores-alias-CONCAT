@@ -1,0 +1,4 @@
+SELECT OrderDetailID,
+CONCAT('Total: ',Quantity*10,'euros') AS ValorTotal
+FROM OrderDetails
+LIMIT 15;
