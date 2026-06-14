@@ -1,0 +1,5 @@
+SELECT ProductName,
+Price,
+Price*2 AS DoublePrice
+FROM Products
+LIMIT 10;
