@@ -1,0 +1,4 @@
+SELECT EmployeeID,
+CONCAT(FirstName,' ',LastName,'-Funcionario Senai')AS Funcionario
+FROM Employees
+LIMIT 3;
