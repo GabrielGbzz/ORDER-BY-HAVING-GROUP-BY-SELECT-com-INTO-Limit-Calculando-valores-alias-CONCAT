@@ -1,0 +1,3 @@
+SELECT CONCAT(CategoryName,'-',Description) AS Categoria
+FROM Categories
+LIMIT 5;
