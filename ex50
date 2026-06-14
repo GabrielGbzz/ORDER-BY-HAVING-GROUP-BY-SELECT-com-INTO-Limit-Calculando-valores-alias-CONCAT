@@ -1,0 +1,12 @@
+SELECT TOP 3
+       CONCAT(e.FirstName, ' ', e.LastName) AS Funcionario,
+       COUNT(o.OrderID) AS TotalEncomendas
+INTO RelatorioFinal
+FROM Employees e
+INNER JOIN Orders o
+       ON e.EmployeeID = o.EmployeeID
+GROUP BY e.EmployeeID,
+         e.FirstName,
+         e.LastName
+HAVING COUNT(o.OrderID) > 5
+ORDER BY COUNT(o.OrderID) DESC;
