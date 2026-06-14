@@ -1,0 +1,6 @@
+SELECT City,
+COUNT(*) AS TotalClientes
+FROM Customers
+GROUP BY City
+ORDER BY TotalClientes DESC
+LIMIT 5;
