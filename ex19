@@ -1,0 +1,6 @@
+SELECT
+    PostalCode,
+    COUNT(*) AS TotalClientes
+FROM Customers
+GROUP BY PostalCode
+LIMIT 8;
