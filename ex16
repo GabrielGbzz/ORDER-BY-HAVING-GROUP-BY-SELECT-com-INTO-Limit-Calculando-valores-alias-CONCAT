@@ -1,0 +1,6 @@
+SELECT
+    City,
+    COUNT(*) AS TotalShippers
+FROM Shippers
+GROUP BY City
+LIMIT 2;
