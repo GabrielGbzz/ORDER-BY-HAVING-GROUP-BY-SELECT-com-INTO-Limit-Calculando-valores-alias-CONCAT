@@ -1,0 +1,6 @@
+SELECT CONCAT('Categoria No ', CategoryID) AS Categoria,
+       COUNT() AS TotalProdutos
+FROM Products
+GROUP BY CategoryID
+HAVING COUNT() > 5
+LIMIT 3;
