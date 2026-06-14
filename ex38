@@ -1,0 +1,3 @@
+SELECT ShipperName, Phone
+INTO ContactosTransporte
+FROM Shippers;
